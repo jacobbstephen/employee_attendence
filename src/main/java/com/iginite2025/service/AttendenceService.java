@@ -7,7 +7,7 @@ import java.util.List;
 import com.iginite2025.DAO.AttendenceDAO;
 import com.iginite2025.entity.Attendance;
 
-public class AttendenceService {
+public class AttendenceService  implements AttendenceServiceInterface{
 	private AttendenceDAO dao;
 	public AttendenceService(Connection conn) {
 		this.dao = new AttendenceDAO(conn);
@@ -23,3 +23,5 @@ public class AttendenceService {
 		return dao.countAbsentByDate(date);
 	}
 }
+
+

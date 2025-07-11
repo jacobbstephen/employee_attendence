@@ -22,7 +22,7 @@ public class Main {
 			System.out.println("<- TOTAL ABSENT ->");
 			list = attendenceService.findAbsentByDate(date);
 			for(Attendance a: list) System.out.println(a);
-			System.out.println("Count of Abasentees: " +  attendenceService.countAbsentByDate(date));
+			System.out.println("Count of Absentees: " +  attendenceService.countAbsentByDate(date));
 			
 			
 		}catch( SQLException e) {

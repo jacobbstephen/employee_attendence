@@ -10,7 +10,7 @@ import java.util.List;
 
 import com.iginite2025.entity.Attendance;
 
-public class AttendenceDAO {
+public class AttendenceDAO  implements AttendenceDAOInterface{
 	final static String ID = "ID";
 	final static String NAME = "NAME";
 	final static String DATE = "DATE";
